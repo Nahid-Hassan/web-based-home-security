@@ -7,3 +7,11 @@ class HomeView(TemplateView):
 
 class AboutView(TemplateView):
     template_name = 'objrecog/about.html'
+
+
+class LiveRecognitionView(TemplateView):
+    template_name = 'objrecog/liverecognition.html'
+
+
+class RecordsView(TemplateView):
+    template_name = 'objrecog/records.html'
