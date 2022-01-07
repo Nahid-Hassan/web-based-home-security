@@ -32,7 +32,7 @@ INSTALLED_APPS = [
 
     # Local
     'accounts',
-    'pages',
+    'objrecog',
 ]
 
 # MIDDLEWARE
