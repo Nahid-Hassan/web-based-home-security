@@ -7,6 +7,7 @@
   - [Model Benchmark Reports](#model-benchmark-reports)
   - [Web Application](#web-application)
   - [Results and Dicussions](#results-and-dicussions)
+  - [Web Application](#web-application-1)
 
 ## Datasets
 
@@ -24,3 +25,14 @@ Here we create a simple django based web application to present how the deep lea
 
 ## Results and Dicussions
 
+## Web Application
+
+To run web application clone the repo and install the required packages.
+
+```bash
+$ pip3 install django Pillow tensorflow numpy pandas opencv-desktop all-auth2 scikit-leran matplotlib 
+$ python manage.py makemigrations objrecog
+$ python manage.py migrate
+$ python manage.py createsuperuser
+$ python manage.py runserver
+```
