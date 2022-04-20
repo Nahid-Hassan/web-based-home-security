@@ -60,8 +60,8 @@ class VideoCamera(object):
 			delta = 0
 			flag = True
 
-			image_name = f"{image_path}_{image_counter}.jpg"
-			cv2.imwrite(image_name, fr)
+			# image_name = f"{image_path}_{image_counter}.jpg"
+			# cv2.imwrite(image_name, fr)
 			image_counter +=1
 
 			
