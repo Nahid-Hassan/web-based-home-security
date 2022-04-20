@@ -8,14 +8,7 @@
 
 For this project we use 5 real environment images using Nikon DSLR camera. For each subject we take ~10000 images. 
 
-| Subject | Total Data | 
-|-------|------|
-|Abir| ~10000|
-|Bobi| ~10000|
-|Empty| ~1000|
-|Rafi| ~10000|
-|Unknown| ~10000|
-
+![images](./dataset-freq-count.png)
 
 ## Model Benchmark Reports
 
