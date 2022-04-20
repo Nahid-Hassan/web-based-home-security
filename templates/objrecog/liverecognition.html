@@ -6,47 +6,21 @@
 {% block content %}
 
 <div style="margin-top: 10%;">
-    <div class="row">
-        <div class="col-md-7">
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe class="embed-responsive-item" src="..."></iframe>
-              </div>              
+    <div class="jumbotron">
+        <div>
+            <h3>Camera 1</h3>
+            <div class="col-md-5 p-1 m-1">
+                <img class="" src="{% url 'live' %}"></img>
+            </div>
         </div>
-        <div class="col-md-5">
-            <table class="table table-striped">
-                <thead class="thead-dark">
-                  <tr>
-                    <th scope="col">ID</th>
-                    <th scope="col">First</th>
-                    <th scope="col">Last</th>
-                    <th scope="col">Handle</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>@mdo</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
-                    <td>@fat</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Larry</td>
-                    <td>the Bird</td>
-                    <td>@twitter</td>
-                  </tr>
-                </tbody>
-              </table>
-              
-             
+        <div>
+            <h3>Camera 2</h3>
+            <!-- <div class="col-md-5 p-1 m-1">
+                <img class="" src="{% url 'live' %}"></img>
+            </div> -->
         </div>
     </div>
+    
 </div>
 
 {% endblock content %}

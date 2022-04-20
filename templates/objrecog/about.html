@@ -1,7 +1,21 @@
 {% extends '_base.html' %}
+{% load static %}
+
 
 {% block title %}About page{% endblock %}
 
 {% block content %}
 <h1>About page</h1>
+
+<p> At present we live in the era of Machine Learning(ML). Particularly Neural Networks(NN) and Deep Learning is gaining more and more attention. From Deep Learning we come to know which Neural Network is suitable for which particular job. So many companies and organizations are becoming more interested in these and trying to convert their services in such a manner. As Machine Learning is providing more and more facilities, the usage of it is increasing. Likewise we are trying to find out the effectiveness of using the ML for home security. 
+    <br><br>
+    Suppose we want to restrict the entrance of a house, say we have a number of  people who can enter into the house and the others cannot, or if any unknown person enters, we want to find out who has entered the house in which particular moment. Also suppose we want to control the restriction remotely. How can we do it with minimum cost, more effectiveness, and at ease -  the answer is quite simple. It lies within the use of ML. With the help of Deep Learning, we come to know that Convolutional Neural Network (CNN) is suitable for image classification. 
+    <br><br>
+
+    <img class="d-block w-100" src="{% static 'images/intro.png' %}" alt="First slide">
+
+    And we can use this concept for the identification of a person and detect unwanted access. For example, the system can detect the authorized person, unauthorized persons, and empty spaces. And for any unauthorized access, the system will notify the owner or the authorized user of the inconvenience. For remote access to the system, we can just have a web app deployed to the cloud and can get access from anywhere. Now, this system is very promising, as it is both cost-friendly, easy to use, and feasible. Though the initial cost is somewhat high, the after cost and maintenance are minimal and usability is good enough.
+
+</p>
+
 {% endblock content %}

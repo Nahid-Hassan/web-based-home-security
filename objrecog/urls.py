@@ -7,5 +7,5 @@ urlpatterns = [
     path('about/', AboutView.as_view(), name='about'),
     path('liverecog/', LiveRecognitionView.as_view(), name='liverecog'),
     path('records/', RecordsView.as_view(), name='records'),
-    path('live/', stream, name='records'),
+    path('live/', stream, name='live'),
 ]

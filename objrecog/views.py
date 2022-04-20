@@ -1,8 +1,9 @@
 from django.views.generic import TemplateView
+from django.views.generic.list import ListView
 from django.shortcuts import render
 from django.http.response import StreamingHttpResponse
 from objrecog.camera	import VideoCamera
-
+from .models import RecordListDB
 
 
 class HomeView(TemplateView):
@@ -17,8 +18,15 @@ class LiveRecognitionView(TemplateView):
     template_name = 'objrecog/liverecognition.html'
 
 
-class RecordsView(TemplateView):
+class RecordsView(ListView):
+    model = RecordListDB
+    
+    paginate_by = 10
+    ordering = ['-record_datetime']
+
     template_name = 'objrecog/records.html'
+    context_object_name = 'record_list'
+
 
 
 # ------------ Live CC Start --------------------------
